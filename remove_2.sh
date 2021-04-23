@@ -21,7 +21,7 @@ sort $DIR2 | uniq > file2.sorted
 remove `comm -23 file1.sorted file2.sorted`
 
 # Smazání nepoužívaných firmware
-remove `find/usr/lib/firmware-atime +2`
+remove `find /usr/lib/firmware-atime +2`
 
 # Smazání záložních obrazů a vygenerování konfiguračního souboru
 find /boot -maxdepth 1 -type f -name *rescue* -delete
