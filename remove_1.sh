@@ -9,6 +9,6 @@ rm -rfv /usr/share/info/
 # rozparsovaní výstupu příkazu locale
 system_lang=`locale | cut -f2 -d= | cut -f1 -d. | head -n 1 `
 # odstranění nepoužívaných lokalizací
-for target in ` find /usr/share/locale -maxdepth 1 -not -name $system_lang * ` ; do
+for target in ` find /usr/share/locale -maxdepth 1 -not -name $system_lang* ` ; do
 	rm -fv $target/LC_MESSAGES/*
 done
