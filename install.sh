@@ -1,7 +1,7 @@
-dnf -y install qt5-qtbase−devel
-dnf -y install qt5-qtmultimedia−devel
-dnf -y install qt5-qtsvg−devel
-dnf -y install qt5-qtwebkit−devel
+dnf -y install qt5-qtbase-devel
+dnf -y install qt5-qtmultimedia-devel
+dnf -y install qt5-qtsvg-devel
+dnf -y install qt5-qtwebkit-devel
 
 cd otter-browser
 mkdir build
