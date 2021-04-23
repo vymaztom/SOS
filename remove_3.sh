@@ -1,7 +1,7 @@
 echo "NetworkManager" > /etc/dnf/protected.d/NetworkManager.conf
 for line in `rpm -qa --queryformat "%{NAME}\n" ` ; do
 	echo "What require package ${line}:"
-	mapfile -t output << ( dnf repoquery -installed --queryformat "%{name}" -whatrequires $line )
+	mapfile -t output < <( dnf repoquery -installed --queryformat "%{name}" -whatrequires $line )
 	echo "${output[@]}"
 	if [ ${#output[@]} -eq 0 ]
 	then
