@@ -1,6 +1,6 @@
 #!/bin/bash
 
-browser="otter-browser"
+browser=$1
 browser_zip="$browser.zip"
 
 zip $browser_zip $browser
